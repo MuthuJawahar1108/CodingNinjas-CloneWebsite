@@ -28,6 +28,7 @@
     border: solid 1px black;
     border-radius: 10px;
     height:auto;
+    padding: 25px 35px;
 }
 
 .section-heading p{
@@ -38,7 +39,12 @@
 .section-heading{
     display: inline-block;
     align-items: center;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 10px 10px 40px;
+
 }
 .button p{
     display: inline-block;
@@ -54,6 +60,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 25px;
+    margin-bottom: 30px;
 }
 .login-para{
     margin: 15px;
@@ -62,14 +69,47 @@
 .login-email{
     text-decoration: none;
     cursor: pointer;
-    margin: 15px;
+    margin: 15px 15px -23px;
     display: block;
     text-align: center;
 }
+.input-box{
+    
+    position: relative;
+    margin: 30px 20px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    border-bottom: 2px solid black;
+}
+.input-box label{
+    position: absolute;
+    top:50%;
+    left:3px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
 .email-box{
+    width:100%;
+    /* height:10px; */
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
     
 }
-
+.login-box button{
+    border: none;
+    background-color: #FC7E13;
+    color: white;
+    padding: 12px;
+    width:100%;
+    border-radius: 50px;
+    
+    
+    /* width: 100%; */
+    /* margin:12px; */
+}
 
 
 
